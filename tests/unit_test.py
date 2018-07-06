@@ -1,7 +1,10 @@
 import unittest
 import requests
 
-
+class SimplisticTest(unittest.TestCase):
+    def test(self):
+        self.assertTrue(True)
+    
 class TestCase(unittest.TestCase):
     def test_index(self):
         r = requests.get("http://0.0.0.0:8080/")
