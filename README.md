@@ -24,20 +24,23 @@ Run the containers:
 $ docker-compose up -d
 ```
 
-#### Sanity Check
-
+#### UnitTest
+For unit test (you might need to install requests module "pip install requests")
+```sh
+python tests/unit_test.py
+```
 #### Healthcheck
 Can be used to check the Rest API Healthcheck
 http://0.0.0.0:8080/healthcheck
 
 ### Task #3
 #### Security:
-1- Secure endpoints using TLS/HTTPS - Keys can be impport from docker compose file
-2- Access Control - by defining role to the user/group to
-3- Using API Keys - it also reduce the impact of DOS attacks - it can be include to the request header
-4- Always input validation
-5- Defining HTTP return codes
-6- Using temporary security credentials by Vault
+- Secure endpoints using TLS/HTTPS - Keys can be impport from docker compose file
+- Access Control - by defining role to the user/group to
+- Using API Keys - it also reduce the impact of DOS attacks - it can be include to the request header
+- Always input validation
+- Defining HTTP return codes
+- Using temporary security credentials by Vault
 
 #### Monitoring:
 - CloudWatch:

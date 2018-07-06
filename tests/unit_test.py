@@ -2,14 +2,16 @@ import unittest
 import requests
 
 
-class BasicTestCase(unittest.TestCase):
+class TestCase(unittest.TestCase):
     def test_index(self):
-        r = requests.get("http://127.0.0.1:8080/")
+        r = requests.get("http://0.0.0.0:8080/")
         self.assertEqual(r.status_code, 200)
 
     def test_person_endpoint(self):
-        r = requests.get('http://127.0.0.1:8080/')
+        r = requests.get('http://0.0.0.0:8080/healthcheck')
         self.assertEqual(r.status_code, 200)
         json_dict = r.json()
-        self.assertEqual(json_dict['Status'], 'Success')
-        self.assertIsNotNone(json_dict["Data"])
+        self.assertEqual(json_dict['status'], 'success')
+
+if __name__ == '__main__':
+    unittest.main()
