@@ -13,6 +13,8 @@ def query_example():
 
     target = request.args.get('target')
 
+    # being a restfull api and needing to look up information based on requests it natural to have a db but, I will add it to a db like PostgreSql - there wasn't enough time
+
     if target == "source":
         return jsonify(
             [{"name": "United Kingdom", "isoCode": "GB"}, {"name": "Ireland", "isoCode": "IE"}, {"name": "France", "isoCode": "FR"}]
