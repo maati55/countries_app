@@ -6,4 +6,4 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 ENV FLASK_ENV="docker"
 EXPOSE 8080
-CMD ["python", "srv_app.py"]
+CMD ["python", "app/srv_app.py"]
