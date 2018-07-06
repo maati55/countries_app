@@ -24,6 +24,12 @@ Run the containers:
 $ docker-compose up -d
 ```
 
+Call the API:
+```sh
+curl -i -H "Accept: application/json" "http://0.0.0.0:8080/v1/countries?target=source"
+curl -i -H "Accept: application/json" "http://0.0.0.0:8080/v1/countries?target=destinations"
+```
+
 #### UnitTest
 For unit test (you might need to install requests module "pip install requests")
 ```sh

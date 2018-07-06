@@ -24,7 +24,7 @@ def query_example():
             [{"name": "Spain", "isoCode": "ES"}, {"name": "Ireland", "isoCode": "IE"}, {"name": "France", "isoCode": "FR"}]
         )
     else:
-        return 'Countries Services App!'
+        return 'API request not valid!'
 
 health = HealthCheck(app, "/healthcheck")
 
