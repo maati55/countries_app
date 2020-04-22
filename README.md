@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/ali0995/demoProject/_apis/build/status/maati55.countries_app?branchName=master)](https://dev.azure.com/ali0995/demoProject/_build/latest?definitionId=1&branchName=master)
+
 # Countries Service App
 
 ## to use this project?
